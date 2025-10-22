@@ -1,8 +1,6 @@
 # menu che gestisce ricerca libro (per autore, titolo e isbn) post ricerca stampa libri, 
 # inserimento libri
 
-
-
 libri = []  
 
 def inserisci_libro():
