@@ -1,6 +1,3 @@
-# menu che gestisce ricerca libro (per autore, titolo e isbn) post ricerca stampa libri, 
-# inserimento libri
-
 from view import stampa_risultati
 
 
