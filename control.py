@@ -1,6 +1,9 @@
 # menu che gestisce ricerca libro (per autore, titolo e isbn) post ricerca stampa libri, 
 # inserimento libri
 
+from view import stampa_risultati
+
+
 libri = []  
 
 def inserisci_libro():
@@ -25,15 +28,6 @@ def ricerca_per_isbn():
     isbn = input("Inserisci l'ISBN da cercare: ")
     risultati = [l for l in libri if l["isbn"] == isbn]
     stampa_risultati(risultati)
-
-def stampa_risultati(risultati):
-    if risultati:
-        print("\n--- RISULTATI ---")
-        for libro in risultati:
-            print(f"Titolo: {libro['titolo']}, Autore: {libro['autore']}, ISBN: {libro['isbn']}")
-    else:
-        print("Nessun libro trovato.")
-    print()
 
 def menu():
     while True:
