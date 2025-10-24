@@ -2,7 +2,7 @@ class Libro:
     def __init__(self, titolo, isbn, autore):
         self.titolo = titolo
         self.isbn = isbn
-        self.autore = autore  # Oggetto Autore
+        self.autore = autore 
 
     def __str__(self):
         return f"Titolo: {self.titolo}, ISBN: {self.isbn}, Autore: {self.autore.nome}"
