@@ -31,7 +31,8 @@ def get_input_nuovo_libro():
         print(f"--- Dati Autore {i+1} ---")
         nome = input("   Nome autore: ")
         cognome = input("   Cognome autore: ")
-        dati_autori.append({"nome": nome, "cognome": cognome})
+        nuovo_Autore = Autore(nome,cognome)
+        dati_autori.append(nuovo_Autore)
         
     if not titolo or not dati_autori:
         return None
