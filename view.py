@@ -1,7 +1,7 @@
 from model import *
 def mostra_menu_e_ottieni_scelta():
     """Mostra il menu all'utente e restituisce l'opzione scelta (stringa)."""
-    print("\n=== 📚 MENU LIBRERIA ===")
+    print("\n=== MENU LIBRERIA ===")
     print("1. Inserisci nuovo libro")
     print("2. Ricerca per titolo")
     print("3. Ricerca per autore")
@@ -10,7 +10,7 @@ def mostra_menu_e_ottieni_scelta():
     print("6. Visualizza la Libreria")
     print("X. Esci")
     
-    scelta = input("👉 Scegli un'opzione: ")
+    scelta = input(" Scegli un'opzione: ")
     return scelta
   
 # Ottenere Dati per Inserimento
@@ -46,7 +46,7 @@ def get_input_nuovo_libro():
 # Ottenere Parametro di Ricerca
 def get_input_ricerca(tipo_ricerca):
     """Ottiene il parametro di ricerca in base al tipo."""
-    parametro = input(f"\n🔎 Inserisci il/l'{tipo_ricerca} da cercare: ")
+    parametro = input(f"\nInserisci il/l'{tipo_ricerca} da cercare: ")
     return parametro
   
 # Mostra risultato di un ricerca
@@ -72,7 +72,7 @@ def mostra_risultato(risultati_coppie):
       
 # Ottenere ISBN per rimozione di un Libro
 def get_input_isbn_rimuovi():
-    return input("🔎 Inserisci l'ISBN del libro da eliminare: ")
+    return input("Inserisci l'ISBN del libro da eliminare: ")
   
 # Messaggi Generici
 def mostra_messaggio(messaggio):
